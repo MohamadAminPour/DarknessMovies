@@ -1,0 +1,135 @@
+.mobile_menu {
+    z-index: 9999;
+    position: fixed;
+    background: var(--black1);
+    width: 300px;
+    height: 100vh;
+    left: -30rem;
+    z-index: 9999999999999;
+    transition: all .5s ease;
+    transition-duration: 1s;
+}
+
+.mobile_menu.active {
+    left: 0;
+}
+
+.mobile_menu_close {
+    cursor: pointer;
+    padding: 0;
+    margin: 0 10px;
+    font-size: 40px;
+    right: -10px;
+    top: 0;
+    position: absolute;
+    transition: all .5s ease;
+}
+
+.mobile_menu_close:hover {
+    transform: rotateZ(180deg);
+}
+
+.logo_brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+.logo_brand h1 {
+    font-size: 1.1rem;
+    color: var(--light1);
+    margin: 0 1rem;
+}
+
+.logo_brand img {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 10rem;
+}
+
+.mobile_menu_search {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--light1);
+    margin-bottom: 2rem;
+}
+
+.mobile_menu_search input {
+    position: absolute;
+    color: var(--light1);
+    width: 100%;
+    height: 100%;
+    height: 25px;
+    border-radius: 3px;
+    outline: none;
+    border: none;
+    padding: 1.3rem;
+    text-align: right;
+    background-color: rgba(255, 255, 255, .1);
+}
+
+.mobile_menu_search i {
+    position: absolute;
+    left: 2%;
+}
+
+.mobile_menu_item {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    direction: rtl;
+}
+
+.mobile_menu_item li {
+    direction: ltr;
+    transition: all .5s ease;
+    margin-top: 5px;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 17px;
+}
+
+.mobile_menu_items:hover {
+    transform: translateX(-5px);
+}
+
+.mobile_menu_item li a {
+    text-decoration: none;
+    color: var(--light1);
+    width: 100%;
+}
+
+.mobile_menu_item li i {
+    margin: 0 10px;
+}
+
+hr {
+    color: var(--light2);
+}
+
+.mobile_menu_logout button {
+    border: none;
+    outline: none;
+    background-color: var(--black1);
+    color: red;
+    cursor: pointer;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 17px;
+}
+
+
+@media (min-width:1050px) {
+    .mobile_menu {
+        display: none;
+    }
+}

@@ -1,0 +1,57 @@
+@import url(mobile-menu.css);
+@import url(header.css);
+@import url(main.css);
+@import url(contact.css);
+@import url(./footer.css);
+
+
+@font-face {
+    font-family: Tanha;
+    src: url(../fonts/Tanha.ttf);
+}
+
+:root {
+    --light1: #fff;
+    --light2: #ffffff23;
+    --gray: gray;
+    --gold1: #fdb94b;
+    --goldLight: #ff990054;
+    --gold2: #ff8000;
+    --error: red;
+    --green: #04a777;
+    --greenLight: #04a77648;
+    --black1: #181b1d;
+    --black2: #2e3032;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Tanha;
+}
+
+body {
+    height: 100vh;
+    background-color: var(--black1);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+input,
+button {
+    border: none;
+    outline: none;
+}
+

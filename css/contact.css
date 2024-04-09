@@ -1,0 +1,128 @@
+/*start contact styles*/
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.contact-container {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    direction: ltr;
+    background-color: var(--black2);
+    border-radius: .5rem;
+    padding: 2rem;
+}
+
+.contact-right {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.contact-right__title {
+    font-weight: 500;
+    color: var(--light1);
+}
+
+.contact-right__subTitle {
+    color: var(--gray);
+    margin-top: 0.4rem;
+}
+
+.contact-left {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-left__item-link {
+    position: relative;
+    width: 7.5rem;
+    margin: 0 .3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--gold1);
+    border: 2px solid var(--goldLight);
+    border-radius: 10rem;
+    padding: 0.3rem 1rem;
+    transition: .4s ease;
+    transition-duration: .5s;
+    overflow: hidden;
+}
+
+.contact-left__item-link::before {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    content: 'لینک';
+    bottom: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background-color: var(--gold1);
+    color: var(--light1);
+    transition: .4s ease;
+    transition-duration: .5s;
+    z-index: 9999;
+}
+
+.contact-left__item-link:hover {
+    background-color: var(--goldLight);
+}
+
+.contact-left__item-link:hover::before {
+    left: 0;
+}
+
+.contact-left__item-icon {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin: 0 0.3rem;
+}
+
+/*finish contact styles*/
+@media screen and (max-width:1020px) {
+    .contact-container {
+        flex-direction: column;
+    }
+
+    .contact-right {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contact-left {
+        order: 1;
+        margin-top: 1.5rem;
+    }
+}
+
+@media (max-width:650px){
+    .contact {
+        margin-top: 12rem;
+    }
+}
+
+
+@media (max-width:500px) {
+    .contact-left__item-text {
+        display: none;
+    }
+
+    .contact-left__item-link {
+        width: 2.5rem;
+        height: 2.5rem;
+        margin: 0 1rem;
+        padding: 0.3rem;
+    }
+}
